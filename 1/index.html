@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Zusammenfassung Modul 293</title>
+
+</head>
+<body>
+<header>
+
+</header>
+<nav>
+
+</nav>
+<h1>Zusammenfassung Modul 293</h1>
+<article>
+    <h3>Auto Tabelle</h3>
+    <link rel="stylesheet" href="tabelle.css">
+    <table>
+        <tr>
+            <th>
+                Marke
+            </th>
+            <th colspan="2">
+                Modelle
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Ferrari
+            </td>
+            <td>
+                LaFerrari
+            </td>
+            <td>
+                Enzo
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                458 Italia
+            </td>
+            <td>
+                488 GTB
+            </td>
+        </tr>
+        <tr>
+            <td>Lamborghini</td>
+            <td colspan="2">Aventador</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Porsche</td>
+            <td>911</td>
+            <td>918 Spyder</td>
+        </tr>
+        <tr>
+            <td>Panamera</td>
+            <td>Cayman</td>
+        </tr>
+    </table>
+    <br><br><br>
+</article>
+
+
+<article>
+    <!-- TODO image01.png -->
+    <img src="./img/image01.png" alt="Hello World">
+</article>
+<article>
+    <!-- TODO song01.mp3 -->
+    <audio src="./audio/song01.mp3" controls></audio>
+</article>
+<article>
+    <!-- /image02.png -->
+    <img src="../image02.png" alt="HelloWorld.html">
+</article>
+<article>
+    <!-- image03.png -->
+    <img src="../content/image03.png" alt="HelloworldCode.html">
+</article>
+<article>
+    <!-- TODO Video "HTML: Relative und Absolute Links" von Phlow -->
+    <iframe width="560" height="315" src="https://youtu.be/PhTp17k5hFY" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+</article>
+
+
+<article>
+    <h3>Reisebuchungs-Formular</h3>
+    <form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+        <fieldset>
+            <label>Abflughafens
+                <select name="Abflughafens " size="6" required>
+                    <optgroup label="Deutschland">
+                        <option label="FRA (Flughafen Frankfurt)">FRA (Flughafen Frankfurt)</option>
+                        <option label="MUC (Flughafen München)">MUC (Flughafen München)</option>
+                        <option label="BER (Flughafen Berlin Brandenburg)">BER (Flughafen Berlin Brandenburg)</option>
+                    </optgroup>
+                    <optgroup label="Österreich">
+                        <option label="VIE (Flughafen Wien)">VIE (Flughafen Wien)</option>
+                        <option label="SZG">SZG (Flughafen Salzburg)</option>
+                        <option label="INN">INN (Flughafen Innsbruck)</option>
+                    </optgroup>
+                    <optgroup label="Italien">
+                        <option label="FCO">FCO (Flughafen Rom-Fiumicino)</option>
+                        <option label="MXP">MXP (Flughafen Mailand-Malpensa)</option>
+                        <option label="VCE">VCE (Flughafen Venedig-Marco Polo)</option>
+                    </optgroup>
+                    <optgroup label="Frankreich">
+                        <option label="CDG">CDG (Flughafen Paris-Charles de Gaulle)</option>
+                        <option label="ORY">ORY (Flughafen Paris-Orly)</option>
+                        <option label="NCE">NCE (Flughafen Nizza)</option>
+                    </optgroup>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <input type="radio" id="hotel" name="Unterkunft" value="hotel" required>
+            <label for="hotel">Hotel</label>
+            <input type="radio" id="ferienwohnung" name="Unterkunft" value="ferienwohnung" required>
+            <label for="ferienwohnung">Ferienwohnung</label>
+            <input type="radio" id="hostel" name="Unterkunft" value="hostel" required>
+            <label for="hostel">Hostel</label>
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" name="zusatzleistungen[]" value="reiseversicherung" id="check1" checked>
+            <label for="check1">Reiseversicherung</label>
+            <input type="checkbox" name="zusatzleistungen[]" value="flughafentransfer" id="check2">
+            <label for="check2">Flughafentransfer</label>
+            <input type="checkbox" name="zusatzleistungen[]" value="zusätzliches gepäck" id="check3">
+            <label for="check3">zusätzliches Gepäck</label>
+        </fieldset>
+        <fieldset>
+            <label for="start-date">Anfangszeitpunkt:</label>
+            <input type="date" id="start-date" name="start-date" required>
+            <br><br>
+            <label for="end-date">Endzeitpunkt:</label>
+            <input type="date" id="end-date" name="end-date" required>
+            <br><br>
+            <label for="duration">Dauer der Reise (Tage):</label>
+            <input type="number" id="duration" name="duration" min="1" max="21" required>
+        </fieldset>
+        <fieldset>
+            <label for="persons">Anzahl Personen:</label>
+            <input type="number" id="persons" name="persons" min="1" required>
+        </fieldset>
+        <fieldset>
+            <label>bevorzugten Fluggesellschaft:
+                <select name="bevorzugten Fluggesellschaft" size="1">
+                    <option>...</option>
+                    <option>Lufthansa</option>
+                    <option>Swiss International Air Lines</option>
+                    <option>Austrian Airlines</option>
+                    <option>Air France</option>
+                    <option>British Airways</option>
+                    <option>Emirates</option>
+                    <option>Qatar Airways</option>
+                    <option>Singapore Airlines</option>
+                    <option>Turkish Airlines</option>
+                    <option>United Airlines</option>
+                    <option>Delta Air Lines</option>
+                    <option>American Airlines</option>
+                    <option>Qantas</option>
+                    <option>Japan Airlines</option>
+                    <option>Korean Air</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" name="optionale Dienstleistungen[]" value="Priority-Check-In" id="check1a" checked>
+            <label for="check1a">Priority-Check-In</label>
+            <input type="checkbox" name="optionale Dienstleistungen[]" value="zusätzliches Handgepäck" id="check2a">
+            <label for="check2a">zusätzliches Handgepäck</label>
+            <input type="checkbox" name="optionale Dienstleistungen[]" value="Buchung eines Mietwagens" id="check3a">
+            <label for="check3a">Buchung eines Mietwagens</label>
+        </fieldset>
+        <fieldset>
+
+            <label> Reiseziele
+                <input type="search" list="reiseziele" required/>
+                <datalist id="reiseziele">
+                    <option value="Amsterdam"></option>
+                    <option value="Athens"></option>
+                    <option value="Auckland"></option>
+                    <option value="Bangkok"></option>
+                    <option value="Barcelona"></option>
+                    <option value="Beijing"></option>
+                    <option value="Berlin"></option>
+                    <option value="Buenos Aires"></option>
+                    <option value="Cairo"></option>
+                    <option value="Cape Town"></option>
+                    <option value="Chicago"></option>
+                    <option value="Copenhagen"></option>
+                    <option value="Dubai"></option>
+                    <option value="Dublin"></option>
+                    <option value="Edinburgh"></option>
+                    <option value="Florence"></option>
+                    <option value="Frankfurt"></option>
+                    <option value="Geneva"></option>
+                    <option value="Hong Kong"></option>
+                    <option value="Istanbul"></option>
+                    <option value="Jakarta"></option>
+                    <option value="Jerusalem"></option>
+                    <option value="Kuala Lumpur"></option>
+                    <option value="Las Vegas"></option>
+                    <option value="London"></option>
+                    <option value="Los Angeles"></option>
+                    <option value="Madrid"></option>
+                    <option value="Mexico City"></option>
+                    <option value="Miami"></option>
+                    <option value="Milan"></option>
+                    <option value="Moscow"></option>
+                    <option value="Munich"></option>
+                    <option value="New Delhi"></option>
+                    <option value="New York"></option>
+                    <option value="Osaka"></option>
+                    <option value="Paris"></option>
+                    <option value="Prague"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Rome"></option>
+                    <option value="San Francisco"></option>
+                    <option value="Sao Paulo"></option>
+                    <option value="Seoul"></option>
+                    <option value="Shanghai"></option>
+                    <option value="Singapore"></option>
+                    <option value="Stockholm"></option>
+                    <option value="Sydney"></option>
+                    <option value="Tokyo"></option>
+                    <option value="Toronto"></option>
+                    <option value="Vienna"></option>
+                    <option value="Zurich"></option>
+                </datalist>
+            </label>
+            <!-- <button type="button">finden!</button> -->
+        </fieldset>
+        <fieldset>
+            <label for="email">E-Mail-Adresse:</label>
+            <input type="email" id="email" name="E-Mail-Adresse" min="1" required>
+        </fieldset>
+        <fieldset>
+            <button type="reset">Reset</button>
+            <button type="submit">Absenden</button>
+        </fieldset>
+    </form>
+</article>
+<footer>
+
+</footer>
+</body>
+</html>
